@@ -23,11 +23,11 @@ const Navbar = () => {
     { name: 'Contact', path: '/contact' },
   ]
 
+  // ✅ FIXED: Correct static file download path
   const handleDownloadCV = () => {
-    // Create a simple CV download
     const link = document.createElement('a')
-    link.href = '/public/Harshal_Pimpalshende_CV.pdf'
-    link.download = 'Harshal_Pimpalshende_CV.pdf'
+    link.href = '/Harshal_Pimpalshende_CV.pdf' // <-- No "/public" prefix!
+    link.setAttribute('download', 'Harshal_Pimpalshende_CV.pdf')
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
