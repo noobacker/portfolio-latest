@@ -129,7 +129,7 @@ const Home = () => {
             <h2 className="text-4xl font-bold mb-4">
               <span className="text-gradient">Tech Stack</span>
             </h2>
-            <p className="text-gray-400">Technologies I work with</p>
+            {/* <p className="text-gray-400">Technologies I work with</p> */}
           </motion.div>
 
           <div className="flex flex-wrap justify-center gap-4">
